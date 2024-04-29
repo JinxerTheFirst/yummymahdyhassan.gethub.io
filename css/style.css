@@ -1,0 +1,71 @@
+/*   <!-- global-start --> */
+
+body {
+    background-color: #0D0D0D;
+    color: #f9f6f6;
+    overflow: hidden;
+}
+
+
+.icon-cursor {
+    cursor: pointer;
+}
+/*   <!-- global-start --> */
+
+
+
+/*   <!-- nav-bar-start --> */
+.nav-bar-bg {
+    background-color: #0D0D0D;
+
+}
+
+.nav-logo {
+    width: 50px;
+}
+
+i {
+    cursor: pointer;
+}
+
+/*   <!-- nav-bar-end -->*/
+
+
+
+/* meal-start*/
+.meal-hover {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.541);
+    top: 100%;
+    transition: all 0.5s;
+}
+
+.meal:hover .meal-hover {
+    top: 0;
+}
+
+/* meal-end */
+
+
+/* search-start */
+::placeholder {
+    color: rgba(255, 255, 255, 0.342) !important;
+}
+
+input {
+    color: white !important;
+}
+/* search-end */
+
+.alert {
+    
+    width: fit-content;
+}
+/* loading-start */
+.loading {
+    display: flex;
+}
+.inner-loading {
+    display: flex;
+}

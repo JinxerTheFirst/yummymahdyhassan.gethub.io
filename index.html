@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="img/logo.png" type="img/x-icon">
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Yummy</title>
+</head>
+
+<body>
+  <div
+    class="loading position-fixed top-0 end-0 start-0 bottom-0 bg-dark z-3 justify-content-center align-items-center">
+    <i class="fa fa-spinner fa-spin fs-1"></i>
+  </div>
+
+  <!-- nav-bar-start -->
+  <div class="side-nav-bar d-flex position-fixed h-100 z-2 nav-bar-bg">
+    <div class="nav-menu h-100 p-4 d-flex flex-column justify-content-between">
+      <div class="nav-links">
+        <ul class="list-unstyled overflow-hidden">
+          <li onclick="getSearch(); closeSideNavBar()" class="position-relative mt-3 icon-cursor">Search</li>
+          <li onclick="getCategories(); closeSideNavBar()" class="icon-cursor position-relative mt-3">Categories</li>
+          <li onclick="getArea(); closeSideNavBar()" class="icon-cursor position-relative mt-3">Area</li>
+          <li onclick="getingredients(); closeSideNavBar()" class="icon-cursor position-relative mt-3">Ingredients</li>
+          <li onclick="contactUs(); closeSideNavBar()" class="position-relative mt-3 icon-cursor">Contact Us</li>
+        </ul>
+      </div>
+      <div class="nav-footer">
+        <div class="nav-icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-solid fa-globe"></i>
+        </div>
+        <p>Copyright Â© 2019 All Rights
+          <br>Reserved.
+        </p>
+      </div>
+    </div>
+    <div class="nav-header text-center bg-white text-black d-flex flex-column justify-content-between py-5">
+      <img class="nav-logo" src="img/logo.png" alt="logo">
+      <i class="fa-solid nav-close-and-open-icon fa-bars fs-2"></i>
+      <div>
+        <i class="d-block fa-solid fa-globe"></i>
+        <i class="d-block fa-solid fa-share-nodes"></i>
+      </div>
+    </div>
+  </div>
+  <!-- nav-bar-end -->
+
+  <div class="container w-75" id="searchInput">
+
+  </div>
+
+  <div class="h-100 position-relative">
+    <div
+      class="inner-loading position-fixed top-0 bottom-0 end-0 start-0 z-1 bg-dark justify-content-center align-items-center">
+      <i class="fa fa-spinner fa-spin fs-1"></i>
+    </div>
+    <!-- main-content-start -->
+    <div class="container z-n1 p-5">
+      <div class="row g-4 " id="apiData">
+      </div>
+    </div>
+  </div>
+
+  <!-- contact-us-start -->
+
+  <!-- contact-us-end -->
+  <script src="css/bootstrap.bundle.min.js"></script>
+  <script src="JS/jquery-3.7.1.min.js"></script>
+  <script src="JS/main.js.js"></script>
+</body>
+
+</html>
